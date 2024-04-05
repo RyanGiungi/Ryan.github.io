@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+  float horas_trabalhadas, taxa_por_hora, salario;
+
+  // Solicitar ao usuário as horas trabalhadas e a taxa por hora
+  printf("Digite o número de horas trabalhadas: ");
+  scanf("%f", &horas_trabalhadas);
+
+  printf("Digite a taxa por hora: ");
+  scanf("%f", &taxa_por_hora);
+
+  // Calcular o salário
+  salario = horas_trabalhadas * taxa_por_hora;
+
+  // Exibir o salário
+  printf("O salário é: R$%.2f\n", salario);
+
+  return 0;
+}
