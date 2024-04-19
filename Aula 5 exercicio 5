@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// Função para calcular o fatorial de um número
+int fatorial(int n) {
+    if (n == 0 || n == 1)
+        return 1;
+    else
+        return n * fatorial(n - 1);
+}
+
+int main() {
+    int N;
+    double E = 1.0; // Inicia E com 1.0 porque E começa com 1
+
+    printf("Digite o valor de N: ");
+    scanf("%d", &N);
+
+    // Calcula e atualiza o valor de E
+    for (int i = 1; i <= N; i++) {
+        E += 1.0 / fatorial(i);
+    }
+
+    printf("O valor de E é: %.10lf\n", E);
+
+    return 0;
+}
